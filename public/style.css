@@ -1,0 +1,112 @@
+body {
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.habit-container {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffff44;
+  width: 380px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover {
+  background: #00cccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #333;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.habit-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habit-name {
+  cursor: pointer;
+  flex: 1;
+}
+
+li.completed .habit-name {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.streak {
+  font-size: 12px;
+  color: #00ffff;
+}
+
+.complete-btn {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.complete-btn:hover {
+  background: #27ae60;
+}
+
+.delete-btn {
+  background: #ff4040;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
